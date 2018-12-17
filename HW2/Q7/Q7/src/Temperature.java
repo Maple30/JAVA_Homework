@@ -27,18 +27,18 @@ public class Temperature {
 	public float getemperatureC() {
 		
 		if(scale == 'C') {
-			return (Math.round(temperature/10))*10;
+			return temperature;
 		}else {
-			return Math.round(5*(temperature-32)/9/10)*10;
+			return 5*(temperature-32)/9;
 		}	
 	}
 	
 	public float getemperatureF() {
 		
 		if(scale == 'F') {
-			return Math.round(temperature/10)*10;
+			return temperature;
 		}else {
-			return (Math.round((9*(temperature/5)+32)/10))*10;
+			return 9*(temperature/5)+32;
 		}	
 	}
 	
